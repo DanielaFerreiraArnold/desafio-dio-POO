@@ -11,9 +11,9 @@ public class Main {
         curso1.setCargaHoraria(8);
 
         Curso curso2 = new Curso();
-        curso1.setTitulo("curso js");
-        curso1.setDescricao("descrição curso js");
-        curso1.setCargaHoraria(4);
+        curso2.setTitulo("curso js");
+        curso2.setDescricao("descrição curso js");
+        curso2.setCargaHoraria(4);
 
         /*
         Polimorfismo: criar um curso a partir de conteúdo
@@ -45,10 +45,11 @@ public class Main {
         System.out.println("Conteúdos inscritos de Daniela" + devDaniela.getConteudosInscritos());
         devDaniela.progredir();
         devDaniela.progredir();
-        System.out.println("------");
-        System.out.println("Conteúdos concluídos de Daniela" + devDaniela.getConteudosConcluidos());
+        System.out.println("-");
         System.out.println("Conteúdos inscritos de Daniela" + devDaniela.getConteudosInscritos());
-        System.out.println("XP: " + devDaniela.calcularXp());
+        System.out.println("-");
+        System.out.println("Conteúdos concluídos de Daniela" + devDaniela.getConteudosConcluidos());
+        System.out.println("XP: " + devDaniela.calcularTotalXp());
 
 
 
@@ -57,16 +58,15 @@ public class Main {
         Dev devJoao = new Dev();
         devJoao.setNome("Joao");
         devJoao.inscreverBootcamp(bootcamp);
-        System.out.println("Conteúdos inscritos" + devJoao.getConteudosInscritos());
+        System.out.println("Conteúdos inscritos de João" + devJoao.getConteudosInscritos());
         devJoao.progredir();
         devJoao.progredir();
         devJoao.progredir();
-        System.out.println("------");
+        System.out.println("-");
+        System.out.println("Conteúdos inscritos de João" + devJoao.getConteudosInscritos());
+        System.out.println("-");
         System.out.println("Conteúdos concluídos de João" + devJoao.getConteudosConcluidos());
-        System.out.println("Conteúdos inscritos" + devJoao.getConteudosInscritos());
-        System.out.println("XP: " + devJoao.calcularXp());
-
-
+        System.out.println("XP: " + devJoao.calcularTotalXp());
 
 
     }
